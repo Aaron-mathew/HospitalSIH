@@ -11,8 +11,8 @@ const UserSidenav = () => {
       <nav className='flex flex-col text-zinc-400 text-xl gap-3'>
         <h1 className='text-black font-semibold text-xl mt-10 mb-5'>New Feeds</h1>
         <Link to="/BookAppointment" className='hover:bg-[#6556CD] hover:text-black duration-300 rounded-lg p-5'><i className="mr-2 ri-fire-fill"></i>Book Appointment</Link>
-        <Link to="/popular" className='hover:bg-[#6556CD] hover:text-black duration-300 rounded-lg p-5'><i className="mr-2 ri-bard-fill"></i>Appointment Status</Link>
-        <Link to="/movie" className='hover:bg-[#6556CD] hover:text-black duration-300 rounded-lg p-5'><i className="mr-2 ri-close-large-line"></i> Delete Appointment</Link>
+        <Link to="/AllAppointmentsOfUserPage" className='hover:bg-[#6556CD] hover:text-black duration-300 rounded-lg p-5'><i className="mr-2 ri-bard-fill"></i>Appointment Status</Link>
+        <Link to="/DeleteAppointment" className='hover:bg-[#6556CD] hover:text-black duration-300 rounded-lg p-5'><i className="mr-2 ri-close-large-line"></i> Delete Appointment</Link>
         {/* <Link to="/tv" className='hover:bg-[#6556CD] hover:text-white duration-300 rounded-lg p-5'><i className="mr-2 ri-tv-2-fill"></i>sthth</Link>
         <Link to="/person" className='hover:bg-[#6556CD] hover:text-white duration-300 rounded-lg p-5'><i className="mr-2 ri-team-fill"></i>shtrht</Link> */}
       </nav>

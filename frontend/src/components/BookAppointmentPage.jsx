@@ -8,7 +8,7 @@ const BookAppointmentPage = () => {
   return (
     <div className="flex">
       <UserSidenav />
-      <div className="w-[80%] h-100vh flex items-center justify-center">
+      <div className="w-[80%] h-100vh flex items-center justify-center bg-[url('')]">
         <form className="bg-white p-8 rounded shadow-lg shadow-[#6556CD] w-full max-w-lg bg-[#6656cd27]">
           <h2 className="text-3xl font-bold mb-6 text-center text-[#6556CD]">Book Appointment</h2>
           

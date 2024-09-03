@@ -5,6 +5,7 @@ import BookAppointmentPage from './components/BookAppointmentPage'
 import AppointmentStatus from './components/AppointmentStatus'
 import AllAppointmentsOfUserPage from './components/AllAppointmentsOfUserPage'
 import DeleteAppointmentUserPage from './components/DeleteAppointmemtUserPage'
+import ManagementHome from './components/ManagementHome'
 
 const App = () => {
   return (
@@ -15,6 +16,8 @@ const App = () => {
         <Route path="/AllAppointmentsOfUserPage" element={<AllAppointmentsOfUserPage />} />    
         <Route path="/AppointmentStatus" element={<AppointmentStatus />} />      
         <Route path="/DeleteAppointment" element={<DeleteAppointmentUserPage />} />
+        <Route path="/ManagementHome" element={<ManagementHome />} />
+
       </Routes>
     </div>
   )

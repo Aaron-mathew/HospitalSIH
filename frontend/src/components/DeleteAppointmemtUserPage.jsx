@@ -9,19 +9,18 @@ const DeleteAppointmentUserPage = () => {
     ]);
 
     const handleDelete = (id) => {
-        // Filter out the appointment with the given id
         setAppointments(appointments.filter(appointment => appointment.id !== id));
     };
 
     return (
         <div className='flex'>
             <UserSidenav />
-            <div className='w-[80%] h-screen flex flex-col items-center justify-center space-y-12 p-8'>
+            <div className='w-[80%] h-screen flex flex-col items-center justify-center space-y-12 p-8 bg-zinc-300'>
                 {appointments.map(appointment => (
-                    <div key={appointment.id} className='w-full max-w-3xl bg-[#6656cdab] p-8 rounded-xl shadow-lg flex justify-between items-center transform transition duration-500 hover:scale-105 hover:bg-[#6556CD]'>
+                    <div key={appointment.id} className='w-full max-w-3xl bg-[#4AB88B] p-8 rounded-xl shadow-lg flex justify-between items-center transform transition duration-500 hover:scale-105 hover:bg-[#3a946c]'>
                         <div>
-                            <h3 className='text-2xl font-bold'>{appointment.hospitalName}</h3>
-                            <p className='text-xl mt-2'>{appointment.doctorName}</p>
+                            <h3 className='text-2xl font-bold text-white'>{appointment.hospitalName}</h3>
+                            <p className='text-xl mt-2 text-white'>{appointment.doctorName}</p>
                         </div>
                         <button
                             onClick={() => handleDelete(appointment.id)}

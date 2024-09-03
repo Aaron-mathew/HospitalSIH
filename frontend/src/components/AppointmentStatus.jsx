@@ -6,14 +6,13 @@ const AppointmentStatus = () => {
     document.title = "Healio | Appointment Status";
 
     const [position, setPosition] = useState(3);
-    const [approxTime, setApproxTime] = useState('15 minutes'); // Example approximate time
+    const [approxTime, setApproxTime] = useState('15 minutes');
 
     useEffect(() => {
-        // Simulate dynamic updates (e.g., fetched from an API)
         const interval = setInterval(() => {
             setPosition(prev => (prev > 1 ? prev - 1 : 1));
             setApproxTime(prev => (prev !== '5 minutes' ? `${parseInt(prev) - 5} minutes` : '5 minutes'));
-        }, 5000); // Update every 5 seconds for demo purposes
+        }, 5000);
 
         return () => clearInterval(interval);
     }, []);
@@ -21,7 +20,7 @@ const AppointmentStatus = () => {
     return (
         <div className="flex">
             <UserSidenav />
-            <div className="w-[80%] h-screen flex items-center justify-center bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">
+            <div className="w-[80%] h-screen flex items-center justify-center bg-gradient-to-r from-[#4AB88B] to-[#596F93]">
                 <div className="text-center">
                     <motion.h1
                         initial={{ scale: 0.8, opacity: 0 }}
@@ -45,7 +44,7 @@ const AppointmentStatus = () => {
                             initial={{ fontSize: '3rem' }}
                             animate={{ fontSize: '5rem' }}
                             transition={{ duration: 1 }}
-                            className="text-5xl font-bold text-[#6556CD] mb-4"
+                            className="text-5xl font-bold text-[#596F93] mb-4"
                         >
                             {position}
                         </motion.p>
@@ -57,7 +56,7 @@ const AppointmentStatus = () => {
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ duration: 1, delay: 0.5 }}
-                            className="text-4xl font-bold text-green-600"
+                            className="text-4xl font-bold text-[#4AB88B]"
                         >
                             {approxTime}
                         </motion.p>

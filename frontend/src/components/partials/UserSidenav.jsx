@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const UserSidenav = () => {
   return (
-    <div className="relative w-[20%] h-[100vh] bg-[#596F93] border-r-2 border-[#E1E5F2]">
+    <div className="relative w-[20%] h-[100vh] bg-[#596F93] border-r-2 border-[#ffffff]">
       <div className="absolute top-0 left-0 w-full bg-white flex justify-center items-center p-2">
         <img className='w-[20vh]' src="./Healio_Logo_new.png" alt="Healio Logo" />
       </div>

@@ -1,15 +1,23 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react';
 
 const UserTopnav = () => {
-    <div className='w-[80%] h-[10vh] relative flex mx-auto items-center'>
-        <i className="text-zinc-400 text-3xl ri-search-line"></i>
-        <input className='w-[50%] text-zinc-200 mx-10 p-5 text-xl outline-none border-none bg-transparent' type="text" placeholder='search anything' />
-        <div className='z-[100] absolute w-[50%] max-h-[50vh] bg-zinc-200 top-[100%] left-[5%] overflow-auto'>
-
-
+  return (
+    <div className="bg-white w-full p-[1.9vh] flex items-center justify-between">
+      <div className="w-[40%]">
+        <input
+          type="text"
+          placeholder="Search..."
+          className="w-full px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#4AB88B] bg-[#4AB88B] text-white placeholder-white"
+        />
+      </div>
+      <div className="flex items-center gap-4">
+        <img src="./user_icon.jpg" alt="User Icon" className="w-[6vh] h-[6vh] rounded-full border-2 border-[#4AB88B]" />
+        <div className="text-[#4AB88B] text-xl">
+          Welcome, User
         </div>
+      </div>
     </div>
-}
+  );
+};
 
-export default UserTopnav
+export default UserTopnav;

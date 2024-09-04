@@ -4,3 +4,25 @@
 
 /* LightColour - #4AB88B
 DarkColour - #596F93 */
+
+
+/* ManagementCurrentAppointment */
+/* Custom Scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Background of the scrollbar track */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #4ab88a98; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #3a946c; /* Color of the scrollbar thumb on hover */
+}
+/* --------------------------------------- */

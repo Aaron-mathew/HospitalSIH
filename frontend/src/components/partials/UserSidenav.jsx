@@ -5,7 +5,10 @@ const UserSidenav = () => {
   return (
     <div className="relative w-[20%] h-[100vh] bg-[#596F93] border-r-2 border-[#ffffff]">
       <div className="absolute top-0 left-0 w-full bg-white flex justify-center items-center p-2">
-        <img className='w-[20vh]' src="./Healio_Logo_new.png" alt="Healio Logo" />
+        {/* Wrap the logo with Link to navigate to home */}
+        <Link to="/UserHome">
+          <img className='w-[20vh]' src="./Healio_Logo_new.png" alt="Healio Logo" />
+        </Link>
       </div>
       <div className="pt-[14vh] p-10 overflow-y-auto">
         <nav className='flex flex-col text-[#E1E5F2] text-xl gap-3'>

@@ -13,7 +13,7 @@ const UserSidenav = () => {
       <div className="pt-[14vh] p-10 overflow-y-auto">
         <nav className='flex flex-col text-[#E1E5F2] text-xl gap-3'>
           <h1 className='text-[#4AB88B] font-semibold text-xl mt-1 mb-3'>Abilities</h1>
-          <Link to="/BookAppointment" className='hover:bg-[#4AB88B] hover:text-[#596F93] duration-300 rounded-lg p-5'>
+          <Link to="/AllHospitalsForAppointment" className='hover:bg-[#4AB88B] hover:text-[#596F93] duration-300 rounded-lg p-5'>
             <i className="mr-2 ri-fire-fill"></i>Book Appointment
           </Link>
           <Link to="/AllAppointmentsOfUserPage" className='hover:bg-[#4AB88B] hover:text-[#596F93] duration-300 rounded-lg p-5'>

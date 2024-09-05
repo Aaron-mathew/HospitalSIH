@@ -3,6 +3,7 @@ import UserSidenav from './partials/UserSidenav';
 import UserTopnav from './partials/UserTopnav';
 
 const DeleteAppointmentUserPage = () => {
+    document.title = "Healio | User_Homepage";
     const [appointments, setAppointments] = useState([
         { id: 1, hospitalName: "Hospital A", doctorName: "Dr. Smith" },
         { id: 2, hospitalName: "Hospital B", doctorName: "Dr. Johnson" },

@@ -26,3 +26,65 @@ DarkColour - #596F93 */
     background: #3a946c; /* Color of the scrollbar thumb on hover */
 }
 /* --------------------------------------- */
+
+
+/* UserHome */
+/* Initial styles */
+.slide-in {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slideIn 1s forwards;
+}
+
+.slide-in-image {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slideInImage 1s forwards;
+}
+
+/* Scroll out animation */
+.slide-out h1,
+.slide-out img {
+    opacity: 1;
+    animation: slideOut 1s forwards;
+}
+
+/* Keyframes for sliding in */
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInImage {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Keyframes for sliding out */
+@keyframes slideOut {
+    to {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+}
+
+/* Styling for upcoming appointment */
+.appointment-status {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+/* ------------------------------------------------------- */

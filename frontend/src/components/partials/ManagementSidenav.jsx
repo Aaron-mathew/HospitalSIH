@@ -20,7 +20,7 @@ const ManagementSidenav = () => {
             <i className="mr-2 ri-notification-4-fill"></i>New Appointments
           </Link>
           <Link to="/ManagementAddAppointment" className='hover:bg-[#4AB88B] hover:text-[#596F93] duration-300 rounded-lg p-5'>
-            <i className="mr-2 ri-fire-fill ri-bard-fill"></i>Make Appointment
+            <i className="mr-2 ri-fire-fill ri-bard-fill"></i>Add Appointment
           </Link>
           <Link to="/ManagementDeleteAppointment" className='hover:bg-[#4AB88B] hover:text-[#596F93] duration-300 rounded-lg p-5'>
             <i className="mr-2 ri-close-large-line"></i>Delete Appointment

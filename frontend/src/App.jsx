@@ -12,12 +12,14 @@ import ManagementDeleteAppointment from './components/ManagementDeleteAppointmen
 import NewManagementAppointments from './components/NewManagementAppointments'
 import BedManagement from './components/BedManagement'
 import InventoryManagement from './components/InventoryManagement'
+import AllHospitalsForAppointment from './components/AllHospitalsForAppointment'
 
 const App = () => {
   return (
     <div className='w-screen h-screen'>
       <Routes>
         <Route path="/UserHome" element={<UserHome />} />
+        <Route path="/AllHospitalsForAppointment" element={<AllHospitalsForAppointment />} />
         <Route path="/BookAppointment" element={<BookAppointmentPage />} /> 
         <Route path="/AllAppointmentsOfUserPage" element={<AllAppointmentsOfUserPage />} />    
         <Route path="/AppointmentStatus" element={<AppointmentStatus />} />      
@@ -29,6 +31,7 @@ const App = () => {
         <Route path="/NewManagementAppointments" element={<NewManagementAppointments />} />
         <Route path="/BedManagement" element={<BedManagement />} />
         <Route path="/InventoryManagement" element={<InventoryManagement />} />
+      
       </Routes>
     </div>
   )

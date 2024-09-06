@@ -4,6 +4,8 @@ import axios from 'axios'
 import { useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import '../Design/Login.css'
+import UserHome from './UserHome';
+import Navbar from './Navbar';
 const Login = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -19,7 +21,7 @@ const Login = () => {
             setError('Please fill in both email and password to login');
         }
         else {
-            axios.post("http://localhost:3000/auth/login", {
+            axios.post("http://localhost:3000/login", {
                 email,
                 password,
             }).then(response => {
@@ -41,21 +43,25 @@ const Login = () => {
         }
     }
     return (
-        <div className='sign-up-container'>
-            <form action="" className='sign-up-form' onSubmit={handleSubmit}>
-                <input type='email' autoComplete='off' placeholder='Email' style={{ marginBottom: '20px' }}
-                    onChange={(e) => setEmail(e.target.value)} />
+        <>
+            <Navbar />
+            <div className='sign-up-container'>
+                <Link className="mgt" to="/MgtLogin" >Login as <span>Managment ?</span></Link>
+                <form className='sign-up-form' onSubmit={handleSubmit}>
+                    <h1>User Login</h1>
+                    <input type='email' autoComplete='off' placeholder='Email' style={{ marginBottom: '20px' }}
+                        onChange={(e) => setEmail(e.target.value)} />
 
-                <input type='password' placeholder='password'
-                    onChange={(e) => setPassword(e.target.value)} />
-                <p>Forgot Password</p>
-                <p>Don't Have Account? <Link to="/signup">Sign Up</Link></p>
+                    <input type='password' placeholder='password'
+                        onChange={(e) => setPassword(e.target.value)} />
+                    <p>Forgot Password</p>
+                    <p>Don't Have Account? <Link to="/signup">Sign Up</Link></p>
 
-                {error && <p style={{ color: 'red' }}>{error}</p>}
+                    {error && <p style={{ color: 'red' }}>{error}</p>}
+                    <button type='submit'>   <Link to='/UserHome' >Login</Link>   </button>
+                </form>
+            </div>    </>
 
-                <button type='submit'>Login</button>
-            </form>
-        </div>
     )
 }
-export default Login
+export default Login;

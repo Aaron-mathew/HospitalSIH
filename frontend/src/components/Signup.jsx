@@ -3,6 +3,7 @@ import "../App.css"
 import axios from 'axios'
 import { Link, useNavigate } from 'react-router-dom';
 import '../Design/Signup.css'
+import Navbar from './Navbar';
 const Signup = () => {
     const [username, setUsername] = useState('');
     const [email, setEmail] = useState('');
@@ -29,13 +30,14 @@ const Signup = () => {
         }
     }
     return (
-        <div className='sign-up-container'>
+        <> 
+        <Navbar />
+         <div className='sign-up-container'>
             <form className='sign-up-form' onSubmit={handleSubmit}>
                 
+                <h1>Signup</h1> 
                 <input type='text' placeholder='Username' style={{ marginBottom: '20px' }}
                     onChange={(e) => setUsername(e.target.value)} />
-
-              
                 <input type='email' autoComplete='off' placeholder='Email' style={{ marginBottom: '20px' }}
                     onChange={(e) => setEmail(e.target.value)} />
 
@@ -45,9 +47,10 @@ const Signup = () => {
 
                 <button type='submit'> Sign Up </button>
                 {error && <p style={{ color: 'red' }}>{error}</p>}
-                <p>Have an Account? <Link to="/">Login</Link></p>
+                <p>Have an Account? <Link to="/login">Login</Link></p>
             </form>
-        </div>
+        </div></>
+       
     )
 }
-export default Signup
+export default Signup;

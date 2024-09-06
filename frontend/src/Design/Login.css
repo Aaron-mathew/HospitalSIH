@@ -6,7 +6,24 @@
   background-color: #f0f0f0;
   flex-direction: column;
 }
+.sign-up-container h1 {
+  font-size: 25px;
+  font-weight:300;
+}
+.sign-up-container h3{
+  font-size: 25px;
+  /* font-weight: bold; */
+  padding-bottom: 5vh;
+}
+.mgt{
+  font-size: 23px;
+  /* font-weight: bold; */
+  padding-bottom: 5vh;
 
+}
+span{
+  font-weight: bold;
+}
 .sign-up-form {
   background-color: #fff;
   padding: 30px;
@@ -24,6 +41,9 @@
   box-sizing: border-box;
   display: block;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+.sign-up-form input::placeholder {
+  font-weight: bold;
 }
 
 .sign-up-form button {

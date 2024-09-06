@@ -6,6 +6,13 @@
   background-color: #f0f0f0;
   flex-direction: column;
 }
+.sign-up-container h1 {
+  font-size: 25px;
+  font-weight: bold;
+}
+.sign-up-form input::placeholder {
+  font-weight: bold;
+}
 
 .sign-up-form {
   background-color: #fff;

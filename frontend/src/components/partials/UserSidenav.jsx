@@ -25,8 +25,8 @@ const UserSidenav = () => {
         </nav>
         <hr className='mt-5 mb-5 border-none h-[1px] bg-[#4AB88B]' />
         <nav className='flex flex-col text-[#E1E5F2] text-xl gap-3'>
-          <Link className='hover:bg-[#4AB88B] hover:text-[#596F93] duration-300 rounded-lg p-5'>
-            <i className="mr-2 ri-information-fill"></i>Logout
+          <Link to = '/' className='hover:bg-[#4AB88B] hover:text-[#596F93] duration-300 rounded-lg p-5'> 
+            <i className="mr-2 ri-information-fill"></i>Logout    
           </Link>
         </nav>
       </div>

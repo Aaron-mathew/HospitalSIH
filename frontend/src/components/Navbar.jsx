@@ -61,7 +61,7 @@ const Navbar = () => {
               duration={500}
               className="transition-all cursor-pointer hover:border-b hover:border-black"
             >
-              Doctors
+              Hospitals
             </Link>
             <Link
               spy={true}

@@ -62,9 +62,10 @@ const AllHospitalsForAppointment = () => {
                                         <img
                                             src="./lowest_wait-time.png" // Replace with your actual image URL
                                             alt="Highlight"
-                                            className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-1/2'
+                                            className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-1/2 transition-opacity duration-900 hover:opacity-0'
                                         />
                                     )}
+
                                 </li>
                             ))}
                         </ul>

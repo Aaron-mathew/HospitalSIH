@@ -22,6 +22,9 @@ const UserSidenav = () => {
           <Link to="/DeleteAppointment" className='hover:bg-[#4AB88B] hover:text-[#596F93] duration-300 rounded-lg p-5'>
             <i className="mr-2 ri-close-large-line"></i>Delete Appointment
           </Link>
+          <Link to="/UserViewReports" className='hover:bg-[#4AB88B] hover:text-[#596F93] duration-300 rounded-lg p-5'>
+            <i className="mr-2 ri-microscope-line"></i>View Reports
+          </Link>
         </nav>
         <hr className='mt-5 mb-5 border-none h-[1px] bg-[#4AB88B]' />
         <nav className='flex flex-col text-[#E1E5F2] text-xl gap-3'>

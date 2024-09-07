@@ -11,15 +11,12 @@ const About = () => {
         </div>
         <div className=" w-full lg:w-3/4 space-y-4 mt-[-100px] lg:mt-[-50px] ">
           <h1 className="text-4xl font-semibold text-center lg:text-start">About Us</h1>
-          <p className=" text-justify lg:text-start">
-            This theory views a hospital as a complex system with interconnected components. It emphasizes the importance of understanding how changes in one part of the system affect the others. For instance, improvements in patient care may lead to increased patient satisfaction, which can positively impact the hospital's reputation and financial performance.
-          </p>
-          <p className="text-justify lg:text-start">
-            Quality improvement theories and methodologies, such as Lean Six Sigma, focus on identifying and eliminating waste and inefficiencies within processes. These approaches help hospitals to improve patient outcomes, reduce costs, and enhance overall performance.
-          </p>
-          <p className="text-justify lg:text-start">
-            Strategic management involves setting long-term goals and developing plans to achieve them. In healthcare, strategic planning helps hospitals to identify their competitive advantages, assess market trends, and allocate resources effectively. By developing a sound strategy.
-          </p>
+          <p className=" text-justify text-[3vh] lg:text-start">
+          At Healio, we aim to revolutionize healthcare management with an integrated, city-wide platform designed to optimize patient flow, bed management, and inventory control. Our mission is to improve hospital efficiency and patient care by leveraging real-time data, predictive analytics, and automation. </p>
+          <p className="text-justify text-[3vh] lg:text-start">
+          By seamlessly connecting hospitals across a network, Healio ensures that healthcare systems operate smoothly, even during peak demand. </p>
+          <p className="text-justify text-[3vh] lg:text-start">
+          We are committed to transforming healthcare operations and enhancing the patient experience with cutting-edge technology and data-driven solutions.                              </p>
         </div>
     </div>
     <Services />

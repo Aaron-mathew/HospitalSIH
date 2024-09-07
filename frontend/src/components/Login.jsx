@@ -46,7 +46,7 @@ const Login = () => {
         <>
             <Navbar />
             <div className='sign-up-container'>
-                <Link className="mgt" to="/MgtLogin" >Login as <span>Managment ?</span></Link>
+                <Link className="mgt" to="/MgtLogin" >Login as a <span>Hospital?</span></Link>
                 <form className='sign-up-form' onSubmit={handleSubmit}>
                     <h1>User Login</h1>
                     <input type='email' autoComplete='off' placeholder='Email' style={{ marginBottom: '20px' }}

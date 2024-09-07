@@ -17,6 +17,8 @@ import Home from './components/Home'
 import Login from './components/Login'
 import Signup from './components/Signup'
 import MgtLogin from './components/MgtLogin'
+import UserViewReports from './components/UserViewReports'
+
 
 const App = () => {
   return (
@@ -39,7 +41,7 @@ const App = () => {
         <Route path="/NewManagementAppointments" element={<NewManagementAppointments />} />
         <Route path="/BedManagement" element={<BedManagement />} />
         <Route path="/InventoryManagement" element={<InventoryManagement />} />
-
+        <Route path='/UserViewReports' element={<UserViewReports />}></Route>
       </Routes>
     </div>
   )

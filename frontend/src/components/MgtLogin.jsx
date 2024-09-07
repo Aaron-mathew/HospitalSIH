@@ -45,9 +45,8 @@ const MgtLogin = () => {
     return (
         <> <Navbar />
         <div className='sign-up-container'>
-            <h3>This forms Belong to Managment Group Only</h3>
             <form className='sign-up-form' >
-                <h1>Managment Login</h1>
+                <h1>Hospital Login</h1>
                 <input type='email' autoComplete='off' placeholder='Email' style={{ marginBottom: '20px' }}
                     onChange={(e) => setEmail(e.target.value)} />
                 <input type='password' placeholder='password'

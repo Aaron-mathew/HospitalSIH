@@ -8,7 +8,7 @@ const Home = () => {
     <> <Navbar />
       <div className=" min-h-screen flex flex-col justify-center lg:px-32 px-5 bg-white text-black bg-no-repeat bg-cover opacity-90 shadow-lg " >
         <div className=" w-full lg:w-4/5 space-y-5 mt-10">
-          <h1 className=" w-3/5 text-5xl font-bold leading-tight -ml-10 ">
+          <h1 className=" w-1/2 text-5xl font-bold leading-tight test-center">
             Empowering Health Choices for a Vibrant Life Your Trusted...
           </h1>
           <p className="w-3/4 font-serif text-lg"  >

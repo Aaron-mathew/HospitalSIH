@@ -47,7 +47,8 @@ const Signup = () => {
 
                 <button type='submit'> Sign Up </button>
                 {error && <p style={{ color: 'red' }}>{error}</p>}
-                <p>Have an Account? <Link to="/login">Login</Link></p>
+                <p>Already have an Account? <Link to="/login">Login</Link></p>
+                <p className='text-red-700 '>To register as a hospital, email us at registrations@healio.com</p>
             </form>
         </div></>
        

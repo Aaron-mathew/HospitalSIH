@@ -8,9 +8,7 @@ const Footer = () => {
         <div className=" w-full md:w-1/4">
           <h1 className=" font-semibold text-xl pb-4">Healio</h1>
           <p className=" text-sm">
-            Our team of dedicated doctors, each specializing in unique fields
-            such as orthopedics, cardiology, pediatrics, neurology, dermatology,
-            and more.
+          Our team at Healio is dedicated to transforming healthcare with innovative technology, combining expertise in web development, machine learning, and data analytics to create seamless, efficient solutions for hospitals and patients.m 
           </p>
         </div>
         <div>
@@ -89,7 +87,7 @@ const Footer = () => {
               123 Elm Street, Suite 456 Springfield, IL 62701 United States
             </Link>
             <Link to="/" spy={true} smooth={true} duration={500}>
-              support@care.com
+              Healio@support.com
             </Link>
             <Link to="/" spy={true} smooth={true} duration={500}>
               +123-456-7890
@@ -104,8 +102,8 @@ const Footer = () => {
           rights reserved
         </p> */}
 
-        <p className="text-center py-4">Designed & Developed by <span className="font-bold">Nerdy Devs</span>, Sagar Group. |
-          Copyright Ⓒ 2023, SMH Bhopal. All Rights
+        <p className="text-center py-4">Designed & Developed by <span className="font-bold">Nerdy Devs</span>, L.N.C.T Group. |
+          Copyright Ⓒ 2024, SMH Bhopal. All Rights
           Reserved.
         </p>
       </div>

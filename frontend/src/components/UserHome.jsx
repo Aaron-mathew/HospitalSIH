@@ -14,7 +14,7 @@ const UserHome = () => {
 
         const timer = setInterval(() => {
             toggleDisplay();
-        }, 9000); // Toggle every 5 seconds
+        }, 4000); // Toggle every 5 seconds
 
         return () => clearInterval(timer); // Cleanup the interval on unmount
     }, []);

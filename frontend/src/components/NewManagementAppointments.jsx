@@ -6,9 +6,9 @@ const NewManagementAppointments = () => {
     document.title = "Healio | New Management Appointments";
 
     const [appointments, setAppointments] = useState([
-        { id: 1, doctorName: "Dr. Smith", date: "2024-09-10", time: "10:00 AM", accepted: false },
-        { id: 2, doctorName: "Dr. Johnson", date: "2024-09-11", time: "11:00 AM", accepted: false },
-        { id: 3, doctorName: "Dr. Williams", date: "2024-09-12", time: "02:00 PM", accepted: false },
+        { id: 1, doctorName: "Dr. Smith", date: "2024-09-10", accepted: false, time: "" },
+        { id: 2, doctorName: "Dr. Johnson", date: "2024-09-11", accepted: false, time: "" },
+        { id: 3, doctorName: "Dr. Williams", date: "2024-09-12", accepted: false, time: "" },
     ]);
 
     const handleAccept = (id) => {
@@ -27,6 +27,12 @@ const NewManagementAppointments = () => {
         ));
     };
 
+    const handleTimeChange = (id, newTime) => {
+        setAppointments(appointments.map(appointment => 
+            appointment.id === id ? { ...appointment, time: newTime } : appointment
+        ));
+    };
+
     return (
         <div className='flex'>
             <ManagementSidenav />
@@ -39,7 +45,9 @@ const NewManagementAppointments = () => {
                                 <div>
                                     <p className='text-lg font-bold text-white'>Doctor: {appointment.doctorName}</p>
                                     <p className='text-lg text-white'>Date: {appointment.date}</p>
-                                    <p className='text-lg text-white'>Time: {appointment.time}</p>
+                                    {appointment.accepted && appointment.time && (
+                                        <p className='text-lg text-white'>Time: {appointment.time}</p>
+                                    )}
                                     {appointment.accepted && (
                                         <div className='flex items-center mt-2'>
                                             <label className='text-white mr-2'>Priority:</label>
@@ -68,7 +76,16 @@ const NewManagementAppointments = () => {
                                         </button>
                                     </div>
                                 ) : (
-                                    <p className='text-green-700'>Accepted</p>
+                                    <div>
+                                        <p className='text-green-700'>Accepted</p>
+                                        {!appointment.time && (
+                                            <input 
+                                                type="time"
+                                                onChange={(e) => handleTimeChange(appointment.id, e.target.value)}
+                                                className='mt-2 p-2 border rounded'
+                                            />
+                                        )}
+                                    </div>
                                 )}
                             </div>
                         ))}
